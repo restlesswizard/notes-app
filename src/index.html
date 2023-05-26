@@ -7,6 +7,26 @@
 	<title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-	<h1>Hellofsdsf sdf</h1>
+	<div class="wrapper">
+		<div class="wrapper__content">
+			<header>
+				<h1>Notes</h1>
+			</header>
+			<main>
+				<button class="add_note">
+					New note
+				</button>
+				<section class="notes">
+					<div class="note">
+						<div class="note__check">
+							<input type="checkbox" name="note-checkbox1" id="note-checkbox1">
+						</div>
+						<p class="note__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quibusdam eos ullam ea ex repudiandae sunt blanditiis magnam quas voluptatem.</p>
+						<button class="note__delete-btn">X</button>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
 </body>
 </html>

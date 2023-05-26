@@ -1,0 +1,7 @@
+.add_note {
+	height: 64px;
+	width: inherit;
+	cursor: pointer;
+	border: 2px solid #aaa;
+	font-size: 16px;
+}
