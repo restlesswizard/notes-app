@@ -4,4 +4,12 @@
 	cursor: pointer;
 	border: 2px solid #aaa;
 	font-size: 16px;
+	transition: ease-in-out .4s;
+	font-weight: bold;
+}
+
+.add_note:hover {
+	background-color: #3d6dd6;
+	color: #eee;
+	border: 2px solid #266ba3
 }
