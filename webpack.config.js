@@ -33,10 +33,10 @@ module.exports = {
 				test: /\.css$/,
 				use: ['style-loader', 'css-loader']
 			},
-			// {
-			// 	test: /\.(png|svg|jpe?g).$/i,
-			// 	type: 'asset/resource'
-			// }
+			{
+				test: /\.(png|svg|jpe?g)$/i,
+				type: 'asset/resource'
+			}
 		]
 	},
 	plugins: [
