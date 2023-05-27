@@ -7,7 +7,8 @@
 
 .note {
 	display: flex;
-	width: inherit
+	width: inherit;
+	appearance: none;
 }
 
 .note__check {
@@ -28,7 +29,7 @@
 	margin-left: auto;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	/* justify-content: center; */
 	min-height: 64px;
 	background-color: #ddd;
 	width: 100%;
