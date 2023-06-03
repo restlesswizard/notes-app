@@ -1,3 +1,5 @@
+import {generateId} from './data-id-generator'
+
 let btnNewNote = document.querySelector('.add_note')
 let sectionNotes = document.querySelector('.notes')
 
@@ -40,7 +42,7 @@ function submitNewNote() {
 
 function createNewNote(text) {
 	sectionNotes.insertAdjacentHTML('afterbegin', `
-	<div class="note">
+	<div class="note" data-id="${generateId()}">
 		<div class="note__check">
 			<input type="checkbox" name="note-checkbox1" id="note-checkbox1">
 		</div>
@@ -48,7 +50,15 @@ function createNewNote(text) {
 			<button class="note__delete-btn">X</button>
 	</div>
 	`)
+
+	let noteDelete = document.querySelector('.note__delete-btn')
+	noteDelete.addEventListener('click', addListenersNewNote())
 }
 
-
+function addListenersNewNote() {
+	let noteText = document.querySelector('.note__text')
+	let btnNoteDel = document.querySelector('.note__delete-btn')
+	console.log(btnNoteDel)
+	console.log(noteText)
+}
 
