@@ -1,7 +1,8 @@
-import {generateId} from './data-id-generator'
+import { generateId } from './data-id-generator';
+import { setToLocalStorage } from './localStorage';
 
 let btnNewNote = document.querySelector('.add_note')
-let sectionNotes = document.querySelector('.notes')
+export let sectionNotes = document.querySelector('.notes')
 
 const noteCreate = `
 <div class="note-create">
@@ -47,20 +48,25 @@ function createNewNote(text) {
 	sectionNotes.insertAdjacentHTML('afterbegin', `
 	<div class="note" data-noteid="${id}">
 		<div class="note__check">
-			<input type="checkbox" name="note-checkbox1" id="note-checkbox1">
+			<input type="checkbox">
 		</div>
 		<p class="note__text" >${text}</p>
 			<button class="note__delete-btn">X</button>
 	</div>
 	`)
 
+	// localStorage.setItem(`${id}`, `${text}`)
+	setToLocalStorage(`${id}`, `${text}`)
+
 	let note = document.querySelector(`.note[data-noteid="${id}"]`)
 	console.log(note)
+
 	let noteDelete = note.querySelector('.note__delete-btn')
 	console.log(noteDelete)
 
 	noteDelete.addEventListener('click', () => {
 		note.remove();
+		localStorage.removeItem(id)
 	},
 	{ once: true }
 	)
