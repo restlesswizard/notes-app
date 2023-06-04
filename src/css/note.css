@@ -1,0 +1,60 @@
+.notes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: inherit;
+}
+
+.note {
+	display: flex;
+	width: inherit;
+	appearance: none;
+}
+
+.note__check {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 64px;
+	min-height: 64px;
+	background-color: #ddd;
+}
+
+.note__check > input {
+	width: 32px;
+	height: 32px;
+}
+
+.note__text {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	min-height: 64px;
+	background-color: #ddd;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 8px 8px 8px 0;
+	text-align: justify;
+	font-size: 1em;
+}
+
+.note__text > input {
+	width: 100%;
+	height: 64px;
+}
+
+.note__delete-btn {
+	width: 40px;
+	min-height: 64px;
+	display: flex;
+	justify-content: center;
+	background-color: #aaa;
+	cursor: pointer;
+	align-items: center;
+	transition: ease-in-out .4s;
+}
+
+.note__delete-btn:hover {
+	background-color: #b63a3a;
+}

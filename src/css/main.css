@@ -1,0 +1,12 @@
+@import url(./reset.css);
+@import url(./wrapper.css);
+@import url(./header.css);
+@import url(./add-note-btn.css);
+@import url(./main-container.css);
+@import url(./note-create.css);
+@import url(./note.css);
+
+body {
+	background-color: #eef;
+
+}
