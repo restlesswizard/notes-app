@@ -37,6 +37,7 @@
 	padding: 8px 8px 8px 0;
 	text-align: justify;
 	font-size: 1em;
+	overflow-wrap: anywhere;
 }
 
 .note__text > input {
