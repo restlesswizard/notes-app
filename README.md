@@ -1,6 +1,6 @@
 # Notes App
 
-## *Version - 0.1.0 Alpha*
+## *Version - 0.1.1 Alpha*
 
 ## 1. Description
 This web-app represents a simple interface, where you can write some notes, mark them at checkbox, and delete by pushing a button.
@@ -9,6 +9,9 @@ This app uses local storage, meaning that if you accidently (or intentionally) r
 
 ## 2. To-Do List
 
-- [ ] Add adaptive css;
+- [x] Add adaptive css;
 - [x] Fix a bug with expanding text;
 - [x] Submit new note by pressing 'Enter' on a PC
+- [ ] Find out why saved notes loading in a chaotic order
+- [ ] Overline note text if checkbox is pressed
+- [ ] Character limit for notes & for input (including validation)
