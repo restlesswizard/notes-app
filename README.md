@@ -11,4 +11,4 @@ This app uses local storage, meaning that if you accidently (or intentionally) r
 
 - [ ] Add adaptive css;
 - [x] Fix a bug with expanding text;
-- [ ] Submit new note by pressing 'Enter' on a PC
+- [x] Submit new note by pressing 'Enter' on a PC

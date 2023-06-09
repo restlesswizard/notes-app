@@ -26,6 +26,7 @@ function submitNewNote() {
 	let noteSubmit = document.querySelector('.note-create__submit-btn')
 	let noteText = document.querySelector('.note-create__text')
 
+	//Listener by pressing submit button
 	noteSubmit.addEventListener('click', function listener() {
 
 		if (noteText.value === '') {
@@ -42,6 +43,7 @@ function submitNewNote() {
 		}
 	})
 	
+	//Listener by pressing 'Enter' on a keyboard
 	noteText.addEventListener('keypress', function pressEnter(event) {
 		if (event.key === 'Enter') {
 			console.log('Enter pressed')
