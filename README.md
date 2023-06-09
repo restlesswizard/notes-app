@@ -15,3 +15,5 @@ This app uses local storage, meaning that if you accidently (or intentionally) r
 - [ ] Find out why saved notes loading in a chaotic order
 - [ ] Overline note text if checkbox is pressed
 - [ ] Character limit for notes & for input (including validation)
+- [ ] Add adaptive css for text
+- [ ] Add custom font/fonts
