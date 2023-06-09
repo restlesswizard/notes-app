@@ -11,13 +11,15 @@ const noteCreate = `
 </div>
 `
 
-btnNewNote.addEventListener('click', () => {
+let submitText = function() {
 	console.log('clicked');
 	btnNewNote.insertAdjacentHTML("afterend", noteCreate)
 	btnNewNote.disabled = true
 
 	submitNewNote()
-})
+}
+
+btnNewNote.addEventListener('click', submitText, false)
 
 function submitNewNote() {
 	let noteCreateContainer = document.querySelector('.note-create')
@@ -39,6 +41,17 @@ function submitNewNote() {
 			createNewNote(noteText.value)
 		}
 	})
+	
+	noteText.addEventListener('keypress', function pressEnter(event) {
+		if (event.key === 'Enter') {
+			console.log('Enter pressed')
+
+			noteText.removeEventListener('keypress', pressEnter)
+			noteCreateContainer.remove()
+			createNewNote(noteText.value)
+		}
+	})
+
 }
 
 function createNewNote(text) {
