@@ -49,7 +49,8 @@ function submitNewNote() {
 			console.log('Enter pressed')
 
 			noteText.removeEventListener('keypress', pressEnter)
-			noteCreateContainer.remove()
+			noteCreateContainer.remove();
+			btnNewNote.disabled = false;
 			createNewNote(noteText.value)
 		}
 	})
