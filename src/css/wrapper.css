@@ -10,3 +10,15 @@
 	flex-direction: column;
 	align-items: center;
 }
+
+@media screen and (max-width: 1024px) and (min-width: 426px) {
+	.wrapper__content {
+		width: 80vw;
+	}
+}
+
+@media screen and (max-width: 425px) and (min-width: 0px) {
+	.wrapper__content {
+		width: 85vw;
+	}
+}
