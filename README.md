@@ -13,7 +13,8 @@ This app uses local storage, meaning that if you accidently (or intentionally) r
 - [x] Fix a bug with expanding text;
 - [x] Submit new note by pressing 'Enter' on a PC
 - [ ] Find out why saved notes loading in a chaotic order
-- [ ] Overline note text if checkbox is pressed
+- [x] Line-through note's text if checkbox is pressed
+- [ ] - Subtask: save checkbox state to local storage
 - [ ] Character limit for notes & for input (including validation)
 - [ ] Add adaptive css for text
 - [ ] Add custom font/fonts

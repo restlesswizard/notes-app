@@ -28,6 +28,21 @@ export function readFromLocalStorage() {
 			let note = document.querySelector(`.note[data-noteid="${key}"]`)
 
 			let noteDelete = note.querySelector('.note__delete-btn')
+
+
+			let checkBox = note.querySelector('input[type=checkbox]')
+		
+			let noteSavedText = note.querySelector('.note__text')
+
+			checkBox.addEventListener('change', () => {
+				if (checkBox.checked) {
+					noteSavedText.style.textDecoration = 'line-through'
+				} else {
+					noteSavedText.style.textDecoration = 'none'
+				}
+			})
+
+			
 	
 			noteDelete.addEventListener('click', () => {
 				note.remove();

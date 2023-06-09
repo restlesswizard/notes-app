@@ -54,7 +54,6 @@ function submitNewNote() {
 			createNewNote(noteText.value)
 		}
 	})
-
 }
 
 function createNewNote(text) {
@@ -66,7 +65,7 @@ function createNewNote(text) {
 		<div class="note__check">
 			<input type="checkbox">
 		</div>
-		<p class="note__text" >${text}</p>
+		<p class="note__text">${text}</p>
 			<button class="note__delete-btn">X</button>
 	</div>
 	`)
@@ -74,11 +73,25 @@ function createNewNote(text) {
 	// localStorage.setItem(`${id}`, `${text}`)
 	setToLocalStorage(`${id}`, `${text}`)
 
+
 	let note = document.querySelector(`.note[data-noteid="${id}"]`)
-	console.log(note)
+	// console.log(note)
+
+	let checkBox = note.querySelector('input[type=checkbox]')
+	// console.log(checkBox)
+
+	let noteSavedText = note.querySelector('.note__text')
+
+	checkBox.addEventListener('change', () => {
+		if (checkBox.checked) {
+			noteSavedText.style.textDecoration = 'line-through'
+		} else {
+			noteSavedText.style.textDecoration = 'none'
+		}
+	})
 
 	let noteDelete = note.querySelector('.note__delete-btn')
-	console.log(noteDelete)
+	// console.log(noteDelete)
 
 	noteDelete.addEventListener('click', () => {
 		note.remove();
