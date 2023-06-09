@@ -15,6 +15,7 @@ This app uses local storage, meaning that if you accidently (or intentionally) r
 - [ ] Find out why saved notes loading in a chaotic order
 - [x] Line-through note's text if checkbox is pressed
 - [ ] - Subtask: save checkbox state to local storage
+- [ ] - Subtask: change note's background color if checkbox is checked
 - [ ] Character limit for notes & for input (including validation)
 - [ ] Add adaptive css for text
 - [ ] Add custom font/fonts
