@@ -19,3 +19,4 @@ This app uses local storage, meaning that if you accidently (or intentionally) r
 - [ ] Character limit for notes & for input (including validation)
 - [ ] Add adaptive css for text
 - [ ] Add custom font/fonts
+- [ ] Use css variables to simplify css changes
